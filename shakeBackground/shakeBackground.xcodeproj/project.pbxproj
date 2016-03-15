@@ -14,6 +14,7 @@
 		11A623CA1C9699E3003E97ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A623C81C9699E3003E97ED /* LaunchScreen.storyboard */; };
 		11A623D51C9699E3003E97ED /* shakeBackgroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A623D41C9699E3003E97ED /* shakeBackgroundTests.swift */; };
 		11A623E01C9699E3003E97ED /* shakeBackgroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A623DF1C9699E3003E97ED /* shakeBackgroundUITests.swift */; };
+		11A623EE1C96A982003E97ED /* shakeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A623ED1C96A982003E97ED /* shakeService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		11A623DB1C9699E3003E97ED /* shakeBackgroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shakeBackgroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A623DF1C9699E3003E97ED /* shakeBackgroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shakeBackgroundUITests.swift; sourceTree = "<group>"; };
 		11A623E11C9699E3003E97ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11A623ED1C96A982003E97ED /* shakeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shakeService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				11A623C61C9699E3003E97ED /* Assets.xcassets */,
 				11A623C81C9699E3003E97ED /* LaunchScreen.storyboard */,
 				11A623CB1C9699E3003E97ED /* Info.plist */,
+				11A623ED1C96A982003E97ED /* shakeService.swift */,
 			);
 			path = shakeBackground;
 			sourceTree = "<group>";
@@ -193,6 +196,11 @@
 				TargetAttributes = {
 					11A623BB1C9699E3003E97ED = {
 						CreatedOnToolsVersion = 7.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					11A623CF1C9699E3003E97ED = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -258,6 +266,7 @@
 			files = (
 				11A623C21C9699E3003E97ED /* ViewController.swift in Sources */,
 				11A623C01C9699E3003E97ED /* AppDelegate.swift in Sources */,
+				11A623EE1C96A982003E97ED /* shakeService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +491,7 @@
 				11A623E61C9699E3003E97ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11A623E71C9699E3003E97ED /* Build configuration list for PBXNativeTarget "shakeBackgroundTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +500,7 @@
 				11A623E91C9699E3003E97ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11A623EA1C9699E3003E97ED /* Build configuration list for PBXNativeTarget "shakeBackgroundUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +509,7 @@
 				11A623EC1C9699E3003E97ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
