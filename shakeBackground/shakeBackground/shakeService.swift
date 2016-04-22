@@ -34,6 +34,10 @@ class ShakeService {
             self.motionManager.accelerometerUpdateInterval = 0.01
             self.motionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue()) { (data, _) -> Void in
                 print("x: \(data!.acceleration.x) y: \(data!.acceleration.y)  z: \(data!.acceleration.z)" )
+                let delta_sensor = (data!.acceleration.x * data!.acceleration.x) + (data!.acceleration.y * data!.acceleration.y) + (data!.acceleration.z * data!.acceleration.z)
+                if(delta_sensor > 30){
+                    self.vibrateYourPhone()
+                }
             }
         }
     }
