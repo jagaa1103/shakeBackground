@@ -9,5 +9,5 @@ This way is not good and efficient programming. But I haven't other way.
 If you use this source....
 You need to check backround mode settings in your project. (you need to turn on audio and location in background mode)
 
-![GitHub Logo](shakeBackground/Screen%20Shot%202016-04-22%20at%207.03.51%20PM.png)
-Format: ![Alt Text](url)
+(shakeBackground/Screen%20Shot%202016-04-22%20at%207.03.51%20PM.png)
+
